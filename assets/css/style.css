@@ -226,7 +226,7 @@ nav ul li.active, nav ul li:hover{
     }
     a:hover, a.active{
         background: none;
-        color: red;
+        color: white;
     }
     #check:checked ~ ul{
         top: 6em;
