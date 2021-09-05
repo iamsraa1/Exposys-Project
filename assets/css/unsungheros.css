@@ -1,0 +1,90 @@
+nav h2{
+    font-size: 1.5rem;
+}
+body{
+    background: #d9d0de;
+}
+.main-c{
+    position: relative;
+    top: 130px;
+    font-family: Maven Pro;
+}
+.main-c h1 {
+    text-align: center;
+}
+/* MAIN CONTENT */
+.name-box{
+    width: 60%;
+    margin-top: 2%;
+
+}
+.name-box>h2{
+    text-align: center;
+    margin: 25px;
+    padding: .8rem;
+}
+.dcard{
+    /* border: 1px solid red; */
+    border-left: 15px solid red; 
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+    background: white;
+}
+.dcard:nth-child(even){
+    border-left: 15px solid red !important;
+    border-right: none;
+   }
+.name-box:nth-child(even){
+    float: right;
+}
+.name-box:nth-child(odd){
+    clear: both;
+}
+.name-box:nth-child(even) .dcard{
+    border-left: none !important;
+    border-right: 15px solid red;
+}
+.name-box:nth-child(16){
+    margin-bottom: 50px;
+}
+footer{
+    margin-top: 25%;
+    clear: both;
+}
+/* ***********medium screen devices********** */
+@media (max-width: 992px) and (min-width: 768px){
+    .name-box{
+        width: 80%;
+    }
+}
+
+/* ***********small screen devices********** */
+@media (max-width: 767px) and (min-width: 576px){
+    .name-box{
+        width: 90%;
+    }
+}
+
+/* **********extra small screen devices********** */
+@media (max-width: 576px){
+    .name-box{
+        width: 100%;
+    }
+    .main-c{
+        top: 200px;
+    }
+    .name-box:nth-child(odd) .dcard{
+        border-right: 15px solid red;
+    }
+    .name-box:nth-child(even) .dcard{
+        border-left: 15px solid red !important;
+    }
+    footer{
+        margin-top:20%;
+    }
+}

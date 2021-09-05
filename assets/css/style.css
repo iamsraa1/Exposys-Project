@@ -131,10 +131,10 @@ nav ul li.active, nav ul li:hover{
     cursor:default;
 }
 .ocard:nth-child(4){
-    box-shadow: 0 0 20px orange;
+    box-shadow: 0 0 20px green;
 }
 .ocard:nth-child(4):hover{
-    box-shadow: 0 0 45px green;
+    box-shadow: 0 0 45px orange;
     cursor:default;
 }
 .itally{
